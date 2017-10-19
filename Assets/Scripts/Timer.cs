@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		totalTime = 300;
+		totalTime = 180;
 		mescs = 0.0f;
 	}
 	

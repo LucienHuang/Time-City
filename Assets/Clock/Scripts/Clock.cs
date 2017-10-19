@@ -52,7 +52,7 @@ void Update()
 //        }
     }
 
-		seconds+=0.1f;
+		seconds+=0.15f;
 		if(seconds >= 60)
 		{
 			seconds = 0;

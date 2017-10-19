@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Hit : MonoBehaviour {
-
-	public AudioClip aBeingHit;
+public class Prop : MonoBehaviour {
 	
-	private GameObject timer;
+	public AudioClip aBeingHit;
+
 	private Timer timerScript;
+	int totalTime;
 
 	// Use this for initialization
 	void Start () {
-//		GameObject.Find("text1").GetComponent<Text> = "hey";
 		timerScript = GameObject.Find("Timer").GetComponent<Timer>();
 	}
 	
@@ -23,10 +21,7 @@ public class Hit : MonoBehaviour {
 
 	void OnTriggerEnter(){
 		AudioSource.PlayClipAtPoint (aBeingHit, GameObject.Find ("RigidBodyFPSController").transform.position);
-		timerScript.totalTime -= 20;
-	}
-
-	void OnTriggerExit(){
-		
+		timerScript.totalTime += 30;
+		Destroy (gameObject);
 	}
 }
