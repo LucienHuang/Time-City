@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 48d960ba9781d47a39685c502df32843
+timeCreated: 1508361319
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: ALPACA54
+  fontNames:
+  - ALPACA54
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
