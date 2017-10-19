@@ -35,7 +35,7 @@ public class ShowTime : MonoBehaviour {
 
 		if (mescs >= 1.0f) {
 			mescs -= 1.0f;
-			milisecond = 40;
+			milisecond = 60;
 		}
 
 		milisecond -= 1;
