@@ -21,9 +21,12 @@ public class Hit : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(){
-		AudioSource.PlayClipAtPoint (aBeingHit, GameObject.Find ("RigidBodyFPSController").transform.position);
-		timerScript.totalTime -= 20;
+	void OnTriggerEnter(Collider other){
+//		Debug.Log (other.gameObject.name);
+		if (other.gameObject.name == "RigidBodyFPSController") {
+			AudioSource.PlayClipAtPoint (aBeingHit, GameObject.Find ("RigidBodyFPSController").transform.position);
+			timerScript.totalTime -= 20;
+		}
 	}
 
 	void OnTriggerExit(){

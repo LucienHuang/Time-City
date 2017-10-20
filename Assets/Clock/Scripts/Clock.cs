@@ -38,18 +38,18 @@ void Update()
     {
         msecs -= 0.01f;
 //        seconds+=0.01f;
-//        if(seconds >= 60)
-//        {
+        if(seconds >= 60)
+        {
 //            seconds = 0;
-//            minutes++;
-//            if(minutes > 60)
-//            {
-//                minutes = 0;
-//                hour++;
-//                if(hour >= 24)
-//                    hour = 0;
-//            }
-//        }
+            minutes++;
+            if(minutes > 60)
+            {
+                minutes = 0;
+                hour++;
+                if(hour >= 24)
+                    hour = 0;
+            }
+        }
     }
 
 		seconds+=0.15f;

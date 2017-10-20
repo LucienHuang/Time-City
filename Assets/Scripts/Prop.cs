@@ -19,9 +19,12 @@ public class Prop : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(){
-		AudioSource.PlayClipAtPoint (aBeingHit, GameObject.Find ("RigidBodyFPSController").transform.position);
-		timerScript.totalTime += 30;
-		Destroy (gameObject);
+	void OnTriggerEnter(Collider other){
+		if (other.gameObject.name == "RigidBodyFPSController") {
+			AudioSource.PlayClipAtPoint (aBeingHit, GameObject.Find ("RigidBodyFPSController").transform.position);
+			timerScript.totalTime += 30;
+			Destroy (gameObject);
+			timerScript.gotProp++;
+		}
 	}
 }

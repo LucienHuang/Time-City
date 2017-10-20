@@ -51,6 +51,7 @@
      <Compile Include="Assets\CyberPunk\Scripts\Perspective2DSortMode.cs" />
      <Compile Include="Assets\Scripts\Hit.cs" />
      <Compile Include="Assets\Scripts\Prop.cs" />
+     <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\ShowTime.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\skyboxSetter.cs" />
