@@ -12,7 +12,7 @@ public class textureChange : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		textureStage = 0;
-		thisObject = GameObject.Find ("Face");
+		thisObject = GameObject.Find ("FaceBig");
 	}
 	
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class textureChange : MonoBehaviour {
 		if (msecs >= 1.0f) {
 			msecs -= 1.0f;
 
-			if (textureStage < 5) {
+			if (textureStage < 4) {
 				textureStage++;
 			} else {
 				textureStage = 0;
@@ -44,6 +44,7 @@ public class textureChange : MonoBehaviour {
 				Texture img = (Texture)Resources.Load ("Clock_A_5");
 				thisObject.GetComponent<Renderer> ().material.mainTexture = img;
 			}
+			Debug.Log (thisObject.GetComponent<Renderer> ().material.mainTexture);
 		}
 
 	}
